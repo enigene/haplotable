@@ -1,0 +1,92 @@
+table {
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-color: gray;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tfoot {
+    display: table-footer-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+table > tr {
+    vertical-align: middle;
+}
+
+col {
+    display: table-column;
+}
+
+colgroup {
+    display: table-column-group;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+    text-align: center;
+}
+
+td:first-child {
+    text-align: left;
+}
+
+th {
+    font-weight: bold;
+}
+
+caption {
+    display: table-caption;
+    text-align: left;
+    caption-side: top;
+}
+
+.cons_A_ {
+    background-color: #DDD;
+}
+
+.cons_B_ {
+    background-color: #DDD;
+}
+
+.cons_J1 {
+    background-color: #EA9999;
+}
+
+.cons_J2 {
+    background-color: #FFCCCC;
+}
+
+.cons_D1 {
+    color: #EAEAEA;
+    background-color: #9900FF;
+}
+
+.cons_D2 {
+    color: #EAEAEA;
+    background-color: #D26EFA;
+}
+
+.onlyInClassCons {
+    text-decoration: underline;
+}
