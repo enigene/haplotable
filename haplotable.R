@@ -45,7 +45,7 @@ option_list <- list(
   make_option(c("-s", "--sortByTypeCons"), action="store_true", default=F,
               help="Sort output by similarities with type
                 consensus [default %default]"),
-  make_option(c("-t", "--thrd"), action="store", type="integer", default=F,
+  make_option(c("-t", "--thrd"), action="store", type="integer", default=0,
               help="Threshold for number of similarities with type consensus.
                 This implies sorting by names within each group by threshold.")
 )
@@ -146,7 +146,7 @@ if(isTRUE(opt$s)){
 }
 
 # sorting by names within each group by threshold
-if(is.numeric(opt$t) & isTRUE(opt$s)){
+if(is.numeric(opt$t) & (opt$t > 0) & isTRUE(opt$s)){
   # make new column with names without dots
   df <- df[, rn2:=gsub("[.]", "", rn)]
   # store first two rows
