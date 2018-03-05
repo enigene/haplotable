@@ -23,14 +23,14 @@ library("envDocument")
 
 description <- "
 Makes an HTML table with colored positions that are identical to the type
-and class consensuses without positions that are the same in both consensus.
+and class consensus without positions that are the same in both consensuses.
 
 Option --sortByTypeCons creates table sorted by similarities with type consensus.
 
 If optional parameter --baseSubs is used then replacement table is applied
 to substitute position (usually contain N) to another one or multiple (A/T/G).
 
-Input:  FASTA alignment, were first seq is type consensus, and secont seq
+Input:  FASTA alignment, were first seq is type consensus, and second seq
         is class consensus
 Output: HTML table"
 
