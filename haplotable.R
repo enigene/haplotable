@@ -146,7 +146,7 @@ if(isTRUE(opt$s)){
 }
 
 # sorting by names within each group by threshold
-if(is.numeric(opt$t) & (opt$t > 0) & isTRUE(opt$s)){
+if(is.numeric(opt$t) & (opt$t > 0)){
   # make new column with names without dots
   df <- df[, rn2:=gsub("[.]", "", rn)]
   # store first two rows
